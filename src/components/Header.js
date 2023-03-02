@@ -54,7 +54,7 @@ const Header = () => {
                 <div>
                   <Link className="d-flex align-items-center gap-10 text-white">
                     <img src="images/compare.svg" alt="Compare products"></img>
-                    <p  className="mb-0">
+                    <p className="mb-0">
                       Compare <br />
                       Products
                     </p>
@@ -85,6 +85,64 @@ const Header = () => {
                       <p className="mb-0">$0.00</p>
                     </div>
                   </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <header className="header-bottom py-3">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="menu-bottom d-flex align-items-center gap-30">
+                <div>
+                  <div className="dropdown">
+                    <button
+                      className="btn btn-secondary  dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="images/menu.svg" alt="menu"></img>
+                      <span className="me-5 d-inline-block">
+                        Shop Categories
+                      </span>
+                    </button>
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <Link className="dropdown-item text-white" to={""}>
+                          Action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item text-white" to={""}>
+                          Another action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item text-white" to={""}>
+                          Something else here
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="menu-links">
+                  <div className="d-flex align-items-center gap-15">
+                    <NavLink className="text-white" to={"/"}>
+                      Home
+                    </NavLink>
+                    <NavLink className="text-white">Our Store</NavLink>
+                    <NavLink className="text-white">Blogs</NavLink>
+                    <NavLink className="text-white" to={"/contact"}>
+                      Contact
+                    </NavLink>
+                  </div>
                 </div>
               </div>
             </div>
