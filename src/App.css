@@ -79,7 +79,25 @@ a {
 }
 .header-bottom .dropdown-item:hover {
   background-color: transparent;
-  color: var(--color-orange) !important
+  color: var(--color-orange) !important;
 }
 
 /*Header Part End*/
+
+/*FOOTER START*/
+
+footer {
+  background-color: var(--color-darker-gray);
+}
+
+footer:not(:first-child) {
+  border-top: 1px solid rgba(255,255,255,0.1)
+}
+
+footer .input-group-text {
+  background-color: var(--color-darker-gray);
+  color: white;
+  padding: 8px 16px;;
+}
+
+/* FOTOTER END*/
